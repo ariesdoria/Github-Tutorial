@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Responsive Web Design</title>
+	<!--Stylesheet-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--jQuery-->
+	<script src="js/jquery.js"></script>
+	<script>
+		//Toggle for width display
+		var showWidth = 1;
+
+		if (showWidth == 1) {
+			$(document).ready(function(){
+				$(window).resize(function(){
+					var width = $(window).width();
+					document.getElementById('output_width').innerHTML="Window Width: " + width.toString();
+				});
+			});
+		}
+	</script>
+</head>
+<body>
+	<!-- Width display -->
+	<div id="output_width"></div>
+
+	<!-- Main Container -->
+	<div id="container">
+		<header class="main-header">
+			<img src="images/logo.png" alt="Responsive" id="logo">
+			<nav class="main-nav">
+				<ul>
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="#">Learn</a></li>
+					<li><a href="#">Brainstorm</a></li>
+					<li><a href="#">Create</a></li>
+					<li><a href="#">Collaborate</a></li>
+					<li><a href="#">Teach</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Main div -->
+		<div id="main">
+			<!-- Content div -->
+			<div id="content">
+				<!--First article-->
+				<article class="art1">
+					<header class="art-header">
+						<h2 class="title"><a href="#">First Post</a></h2>
+						<span>Created By: Aristotle Doria on August 29, 2018</span>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic provident aut, temporibus perferendis consequatur eaque explicabo illo impedit dicta nam molestias sint eveniet excepturi esse ducimus, magni nisi reiciendis quam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam possimus iste deleniti neque, in doloremque natus aliquam asperiores enim nesciunt, laudantium sequi error necessitatibus dolor culpa! Dolorem quia pariatur, unde!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, accusamus, rerum? Quam, recusandae, vitae. Nam, quasi, corporis. Distinctio, quis, velit? Perspiciatis quidem nemo cumque aliquid voluptatibus ut saepe cupiditate beatae?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptate ut earum numquam perferendis, ea, dolores placeat quaerat voluptatem inventore harum possimus ipsam debitis autem, modi fugit cumque architecto ipsa.</p>
+					<a href="#" class="readmore">Read more</a>
+				</article>
+				<!-- Second article -->
+				<article class="art2">
+					<header class="art-header">
+						<h2 class="title"><a href="#">Second Post</a></h2>
+						<span>Created By: Aristotle Doria on August 29, 2018</span>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic provident aut, temporibus perferendis consequatur eaque explicabo illo impedit dicta nam molestias sint eveniet excepturi esse ducimus, magni nisi reiciendis quam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam possimus iste deleniti neque, in doloremque natus aliquam asperiores enim nesciunt, laudantium sequi error necessitatibus dolor culpa! Dolorem quia pariatur, unde!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, accusamus, rerum? Quam, recusandae, vitae. Nam, quasi, corporis. Distinctio, quis, velit? Perspiciatis quidem nemo cumque aliquid voluptatibus ut saepe cupiditate beatae?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptate ut earum numquam perferendis, ea, dolores placeat quaerat voluptatem inventore harum possimus ipsam debitis autem, modi fugit cumque architecto ipsa.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, numquam! Omnis, aspernatur reprehenderit explicabo nobis magni asperiores facilis quas earum, veritatis similique, mollitia soluta nemo perspiciatis voluptates. Voluptate, praesentium, ea.</p>
+					<a href="#" class="readmore">Read more</a>
+				</article>
+			</div>
+			<!-- Sidebar -->
+			<aside id="sidebar">
+				<div class="block">
+					<h2>Top Sidebar</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam est id harum suscipit sint, reiciendis enim deleniti omnis, libero dolorum dicta! Sapiente quis at voluptatibus, expedita natus est distinctio dolorum.</p>
+				</div>
+				<div class="block">
+					<h2>Mid Sidebar</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam est id harum suscipit sint, reiciendis enim deleniti omnis, libero dolorum dicta! Sapiente quis at voluptatibus, expedita natus est distinctio dolorum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi totam facilis necessitatibus, rem provident autem veniam fugit sunt, dolorum! Sapiente eligendi similique quasi ad veritatis, suscipit voluptatem error sint recusandae?</p>
+				</div>
+				<div class="block">
+					<h2>Bottom Sidebar</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam est id harum suscipit sint, reiciendis enim deleniti omnis, libero dolorum dicta! Sapiente quis at voluptatibus, expedita natus est distinctio dolorum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam est id harum suscipit sint, reiciendis enim deleniti omnis, libero dolorum dicta! Sapiente quis at voluptatibus, expedita natus est distinctio dolorum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam est id harum suscipit sint, reiciendis enim deleniti omnis, libero dolorum dicta! Sapiente quis at voluptatibus, expedita natus est distinctio dolorum.</p>
+				</div>
+			</aside>
+		</div>
+		<!-- Clear float -->
+		<div class="clr"></div>
+		<footer>
+			<p>Copyright &copy; 2018 Resproject</p>
+		</footer>
+	</div>
+	</body>
+</html>
